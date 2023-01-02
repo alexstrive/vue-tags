@@ -2,7 +2,7 @@
   <div class="tags-input-wrapper">
     <span class="tag-item" v-for="(tag, index) in tags" :key="index">
       {{ tag }}
-      <a href="#" @click.prevent="removeTag(index)">&times;</a>
+      <a href="#" class="remove-tag" @click.prevent="removeTag(index)">&times;</a>
     </span>
     <input
         type="text"
